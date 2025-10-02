@@ -9,13 +9,15 @@
 ### 初回のみ
 ・eccube配下に、本コードを配置します. (初回のみ)
 ```
-eccube_web/eccube/script_git/
+cd eccube_web/eccube/
+git clone git@github.com:yasuke-kuroda-diezon/script_git.git
 ```
 
 ・script_git/ ディレクトリを、ec-cubeリポジトリのGit管理の対象外とします. (初回のみ)
 ```
-cd eccube_web/eccube/
 echo "script_git/" >> .git/info/exclude
+
+git status // script_git/ ディレクトリが、git管理されていなければOK
 ```
 
 ・スクリプトに実行権限を付与します (初回のみ)
