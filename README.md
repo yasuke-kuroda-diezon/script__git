@@ -75,10 +75,11 @@ script_git/
 `./script_git/merge_and_push.sh`を実行する際、以下のような危険な操作を防ぐためのバリデーションを行っています。
 
 main(master)ブランチ上で、xxxブランチの内容を取り込むことはできません。
-<img width="568" height="219" alt="validate_main" src="https://github.com/user-attachments/assets/36912b10-e23c-434c-ab49-fa73988902f1" />
+<img width="568" height="219" alt="validate_main" src="https://github.com/user-attachments/assets/a872728e-2437-4602-96e8-dafe96b821d0" />
 
 yyyブランチ上で、staging(develop)ブランチの内容を取り込むことはできません。
-<img width="521" height="218" alt="validate_staging" src="https://github.com/user-attachments/assets/1ca1681e-8446-4de1-84f0-c4915d26e893" />
+<img width="521" height="218" alt="validate_staging" src="https://github.com/user-attachments/assets/6ef2b26e-2515-44af-af71-f726ecf64948" />
+
 
 ## Regolith Headless対応
 
