@@ -32,7 +32,7 @@ function executeMergeAndPushTask() {
 
     # 安全策. stagingを取り込む(マージ対象に指定する)ことはないはず.
     if [ "$mergeBranch" = "staging" ] || [ "$mergeBranch" = "develop" ]; then
-        logWarning "mergeBranchに'staging'は指定できません。処理を中止します。"
+        logWarning "mergeBranchに'staging'または'develop'は指定できません。処理を中止します。"
         return 1 # means false.
     fi
 
