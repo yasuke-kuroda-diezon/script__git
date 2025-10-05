@@ -7,18 +7,18 @@
 
 ## 使い方
 ### 初回のみ
-1. eccube配下に、本コードを配置します. (初回のみ)
+1. eccube/ 配下に、本コードを配置します. (初回のみ)
   ```
   cd eccube_web/eccube/
   git clone git@github.com:yasuke-kuroda-diezon/script__git.git
   ```
 
-2. 本スクリプトを、ec-cubeリポジトリのGit管理の対象外とします. (初回のみ)
+2. 本コードを、ec-cubeリポジトリのGit管理の対象外とします. (初回のみ)
   ```
   echo "script__git/" >> .git/info/exclude
   ```
 
-3. ・スクリプトに実行権限を付与します (初回のみ)
+3. スクリプトに実行権限を付与します (初回のみ)
   ```
   chmod +x ./script__git/*.sh
   ```
