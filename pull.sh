@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-runTask() {
+runTaskCalledByMain() {
     if ! executePullTask $baseBranch; then
         return;
     fi

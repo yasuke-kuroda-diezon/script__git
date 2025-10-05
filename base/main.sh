@@ -11,7 +11,7 @@ source ./script__git/lib/task.sh
 function executeRegolith() {
     # ▼ for eccube dir.
     printDirectoryInfo
-    runTask
+    runTaskCalledByMain
 
     # ▼ for Plugin dirs.
     cd app/Plugin
@@ -23,7 +23,7 @@ function executeRegolith() {
 
         cd $dir
         printDirectoryInfo
-        runTask
+        runTaskCalledByMain
         cd -
     done
 }
@@ -40,7 +40,7 @@ function executeRegolithHeadLess() {
     for dir in "${dirs[@]}"; do
         cd $dir
         printDirectoryInfo
-        runTask
+        runTaskCalledByMain
         cd -
     done
 }

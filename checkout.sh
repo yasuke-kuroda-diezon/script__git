@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-runTask() {
+runTaskCalledByMain() {
     if ! gitCheckout $baseBranch; then
         return;
     fi

@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-runTask() {
+runTaskCalledByMain() {
     if ! gitCleanForce; then
         return;
     fi
