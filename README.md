@@ -78,12 +78,12 @@ script__git/
 1. main(master)ブランチ上で、`git merge xxx`を実行することはできません
   (=main(master)ブランチは、別ブランチにマージされることのみ許可します)
 
-<i=mg width="568" height="219" alt="validate_main" src="https://github.com/user-attachments/assets/a872728e-2437-4602-96e8-dafe96b821d0" />
-
+<img width="651" height="264" alt="スクリーンショット 2025-10-05 15 46 11" src="https://github.com/user-attachments/assets/d7af625f-283c-4046-82de-a6fa23ecbb4d" />
 
 2. yyyブランチ上で、`git merge staging`を実行することはできません
   (=staging(develop)ブランチは、別ブランチをマージすることのみ許可します)
-<img width="521" height="218" alt="validate_staging" src="https://github.com/user-attachments/assets/6ef2b26e-2515-44af-af71-f726ecf64948" />
+
+<img width="691" height="277" alt="スクリーンショット 2025-10-05 16 02 42" src="https://github.com/user-attachments/assets/42030e59-4da7-4ac3-8e50-94ea53841c61" />
 
 
 ## Regolith Headless対応
