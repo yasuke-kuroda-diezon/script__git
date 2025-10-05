@@ -7,7 +7,7 @@ projectType="Regolith"
 # スクリプト実行後にいるブランチ.（checkout.sh, pull.sh, merge_and_push.shで使用します）
 baseBranch="release/v1.0.0"
 
-# 取り込む対象.（merge_and_push.shで使用します）
+# 取り込む対象.（merge_and_push.shでのみ使用する変数です）
 mergeBranch="main"
 
 # ==================================================================
