@@ -56,13 +56,13 @@
 ```
 script__git/
 ├── config/
-│   └── config.sh
+│   └── config.sh      # 設定ファイル.
 ├── core/
 │   └── main.sh
 ├── lib/
-│   ├── git_command.sh
+│   ├── git_command.sh # gitコマンド一覧.
 │   ├── log.sh
-│   └── task.sh
+│   └── task.sh        # gitコマンドを組み合わせたタスクセットの一覧.
 ├── checkout.sh
 ├── delete_fully_merged_branch.sh
 ├── delete_untracked_files.sh
@@ -75,10 +75,14 @@ script__git/
 ## 安全への配慮
 `./script__git/merge_and_push.sh`を実行する際、以下のような危険な操作を防ぐためのバリデーションを行っています。
 
-main(master)ブランチ上で、xxxブランチの内容を取り込むことはできません。
-<img width="568" height="219" alt="validate_main" src="https://github.com/user-attachments/assets/a872728e-2437-4602-96e8-dafe96b821d0" />
+1. main(master)ブランチ上で、`git merge xxx`を実行することはできません
+  (=main(master)ブランチは、別ブランチにマージされることのみ許可します)
 
-yyyブランチ上で、staging(develop)ブランチの内容を取り込むことはできません。
+<i=mg width="568" height="219" alt="validate_main" src="https://github.com/user-attachments/assets/a872728e-2437-4602-96e8-dafe96b821d0" />
+
+
+2. yyyブランチ上で、`git merge staging`を実行することはできません
+  (=staging(develop)ブランチは、別ブランチをマージすることのみ許可します)
 <img width="521" height="218" alt="validate_staging" src="https://github.com/user-attachments/assets/6ef2b26e-2515-44af-af71-f726ecf64948" />
 
 
