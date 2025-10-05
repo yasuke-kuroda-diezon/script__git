@@ -1,10 +1,10 @@
 # ==================================================================
 # ▼ main functions.
 # ==================================================================
-source ./script_git/config/config.sh
-source ./script_git/lib/git_command.sh
-source ./script_git/lib/log.sh
-source ./script_git/lib/task.sh
+source ./script__git/config/config.sh
+source ./script__git/lib/git_command.sh
+source ./script__git/lib/log.sh
+source ./script__git/lib/task.sh
 
 # Regolith.
 # eccube/ と app/Plugin/ に対して実行.
