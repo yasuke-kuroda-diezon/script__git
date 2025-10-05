@@ -9,5 +9,5 @@ runTask() {
 }
 
 # Main process.
-source ./script__git/core/main.sh
+source ./script__git/base/main.sh
 main

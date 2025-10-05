@@ -57,7 +57,7 @@
 script__git/
 ├── config/
 │   └── config.sh      # 設定ファイル.
-├── core/
+├── base/
 │   └── main.sh
 ├── lib/
 │   ├── git_command.sh # gitコマンド一覧.
@@ -96,3 +96,10 @@ echo "script__git/" >> .git/info/exclude
 chmod +x ./script__git/*.sh
 ./script__git/pull.sh
 ```
+
+## メモ
+
+ディレクトリ構成に悩みました。
+- スクリプトは`bin/`に入れたかったけど、実行パスがその分長くなってしまい使いやすさを失うので、`bin/`に入れず、本リポジトリの直下にスクリプト群を配置しました.
+- `main.sh`は実行権限を付与する必要がなく、`m`を入力してタブキー押下で`merge_and_push.sh`を実行できるように、実行スクリプト群と`main.sh`のディレクトリを分けました。
+- `core/main.sh`にすると、`config/`と`co`まで重複するので、`co`まで入力してタブキー押下で設定ファイルが開けなくなるので、`core/`は採用できず、`base/`にしました。
