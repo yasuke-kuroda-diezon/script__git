@@ -13,7 +13,7 @@
   git clone git@github.com:yasuke-kuroda-diezon/script__git.git
   ```
 
-2. script__git/ ディレクトリを、ec-cubeリポジトリのGit管理の対象外とします. (初回のみ)
+2. 本スクリプトを、ec-cubeリポジトリのGit管理の対象外とします. (初回のみ)
   ```
   echo "script__git/" >> .git/info/exclude
   ```
